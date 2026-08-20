@@ -28,6 +28,88 @@ h1 {
   font-size: 1.15rem;
 }
 
+.demo-panel {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #d8d0c5;
+}
+
+.demo-panel h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.demo-panel p {
+  color: var(--muted);
+}
+
+button,
+input {
+  font: inherit;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.65rem 1rem;
+  border: 2px solid var(--accent);
+  border-radius: 0.25rem;
+  color: #fff;
+  background: var(--accent);
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid #1f6f78;
+  outline-offset: 3px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 1.25rem;
+  background: rgb(32 37 31 / 70%);
+}
+
+.modal-dialog {
+  width: min(100%, 32rem);
+  box-sizing: border-box;
+  padding: 1.5rem;
+  border: 1px solid #d8d0c5;
+  border-radius: 0.4rem;
+  color: var(--heading);
+  background: var(--background);
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 25%);
+}
+
+.modal-dialog h2 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+}
+
+.modal-dialog p {
+  margin: 0;
+}
+
+.modal-dialog label {
+  display: grid;
+  gap: 0.4rem;
+  margin-top: 1.25rem;
+  color: var(--muted);
+}
+
+.modal-dialog input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.6rem;
+  border: 1px solid #8e918c;
+  border-radius: 0.25rem;
+  color: var(--heading);
+  background: #fff;
+}
+
 @media (max-width: 40rem) {
   .playground-shell {
     padding: 5rem 1.25rem;
