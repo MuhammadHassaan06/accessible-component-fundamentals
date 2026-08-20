@@ -147,6 +147,27 @@ input:focus-visible {
   margin: 0;
 }
 
+.disclosure {
+  margin-top: 1.5rem;
+}
+
+.disclosure button {
+  margin-top: 0;
+}
+
+.disclosure-panel {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid #d8d0c5;
+}
+
+.disclosure-panel p {
+  margin: 0 0 0.75rem;
+}
+
+.disclosure-panel p:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 40rem) {
   .playground-shell {
     padding: 5rem 1.25rem;

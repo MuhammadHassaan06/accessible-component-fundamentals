@@ -1,4 +1,5 @@
 import './App.css'
+import Disclosure from '../playground/Disclosure'
 import Modal from '../playground/Modal'
 import Tabs from '../playground/Tabs'
 
@@ -70,6 +71,21 @@ function App() {
             },
           ]}
         />
+      </section>
+      <section className="demo-panel" aria-labelledby="disclosure-demo-heading">
+        <h2 id="disclosure-demo-heading">Disclosure</h2>
+        <p>Expand the panel to reveal more information about this exercise.</p>
+        <Disclosure label="About the accessibility practice">
+          <p>
+            Accessible interfaces give people more than one way to complete a
+            task. They support keyboard navigation, understandable structure,
+            and clear changes of state.
+          </p>
+          <p>
+            This disclosure keeps its trigger available at all times while its
+            additional content can be shown or hidden on demand.
+          </p>
+        </Disclosure>
       </section>
     </main>
   )
